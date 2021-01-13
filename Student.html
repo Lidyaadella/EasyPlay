@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIGN UP STUDENT</title>
+	<title>SIGN UP</title>
 	<link rel="stylesheet"href="Student.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 		</div>
 	</div>
 	</div>
-	<form method="post" class="form">
+	<form method="post" class="form" onsubmit="validasi()" action="index.html">
 		<label for="Name"></label>
 		<input type="text" id="Name" placeholder="Name" class="form-content">
 			<br>
@@ -23,17 +23,21 @@
 			<br>
 		<label for="Username"></label>
 		<input type="text" id="Username" placeholder="Username" class="form-content">
-			<br>
+			<br> 
 			<br>
 		<label for="Password"></label>
-		<input type="Password" id="Password" placeholder="Password" class="form-content">
+		<input type="Password" id="Password" placeholder="Password" class="form-password">
 			<br>
 			<br>
-		<input type="checkbox" id="ingat saya"><label for="ingat saya">Ingat Saya</label>
+		<input type="checkbox" class="form-checkbox">
+		<p class="text">Tampilkan Password</p>
 		<br>
 		<br>
-		<button type="submit"><a href="Index.html" class="Submit2">Create Account</a></button>
+		<button type="submit"id="Submit2">Create Account</button>
 
 	</form>
+	<script src="Signin.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
 </body>
+</script>
 </html>
